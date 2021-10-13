@@ -6,21 +6,16 @@
 #    By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 14:06:19 by ysoroko           #+#    #+#              #
-#    Updated: 2021/10/13 14:06:30 by ysoroko          ###   ########.fr        #
+#    Updated: 2021/10/13 16:51:03 by ysoroko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # ------------------------------------- VARS ----------------------------------
 
-NAME		=	ex03
+NAME		=	ex00
 
 SRC			=	main.cpp \
-				Bureaucrat.cpp \
-				Form.cpp \
-				ShrubberyCreationForm.cpp \
-				RobotomyRequestForm.cpp \
-				PresidentialPardonForm.cpp \
-				Intern.cpp
+				Converter.cpp
 
 OBJS		=	$(SRC:.cpp=.o)
 
