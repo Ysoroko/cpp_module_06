@@ -6,7 +6,7 @@
 /*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 16:40:59 by ysoroko           #+#    #+#             */
-/*   Updated: 2021/10/14 11:04:55 by ysoroko          ###   ########.fr       */
+/*   Updated: 2021/10/14 11:08:37 by ysoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,18 +36,29 @@ static Data* deserialize(uintptr_t raw)
 
 int	main( void )
 {
-	Data	data("my data");
+	Data	data1("my data");
 
 	// serialize
-	uintptr_t	test = serialize(&data);
+	uintptr_t	test = serialize(&data1);
 
 	// deserialize
 	Data	*data2 = deserialize(test);
+	std::cout << std::endl << std::endl;
 
 	// Result should be the same!
-	// (Serialization/deserialization keep the same value inside data)
-	std::cout << "Data1 value: " << data.getValue() << std::endl;
+	// (Serialization/deserialization keep the same value inside data and same address)
+
+	std::cout << "ADRESSES COMPARED:" << std::endl;
+	std::cout << "----------------------------" << std::endl;
+	std::cout << "Data1 address: "<< &data1 << std::endl;
+	std::cout << "Data2 address: "<< data2 << std::endl;
+	std::cout << std::endl << std::endl;
+
+	std::cout << "VALUES INSIDE DATA COMPARED:" << std::endl;
+	std::cout << "----------------------------" << std::endl;
+	std::cout << "Data1 value: " << data1.getValue() << std::endl;
 	std::cout << "Data2 value: " << (*data2).getValue() << std::endl;
+	std::cout << std::endl << std::endl;
 
 	return (0);
 }
