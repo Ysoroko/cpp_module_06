@@ -6,7 +6,7 @@
 #    By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 14:06:19 by ysoroko           #+#    #+#              #
-#    Updated: 2021/10/13 16:51:03 by ysoroko          ###   ########.fr        #
+#    Updated: 2021/10/14 09:52:04 by ysoroko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,5 +50,16 @@ re:	fclean all
 
 .cpp.o:
 	${COMPILE} ${FLAGS} -c $< -o ${<:.cpp=.o}
+
+# ------------------------------------- TESTS ---------------------------------
+
+test1: $(NAME)
+	./$(NAME) 0
+
+test2: $(NAME)
+	./$(NAME) nan
+
+test3: $(NAME)
+	./$(NAME) 42.0f
 
 .PHONY:	all clean fclean re run
