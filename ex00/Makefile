@@ -6,7 +6,7 @@
 #    By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 14:06:19 by ysoroko           #+#    #+#              #
-#    Updated: 2021/10/14 09:52:04 by ysoroko          ###   ########.fr        #
+#    Updated: 2021/10/14 11:09:48 by ysoroko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,4 +62,4 @@ test2: $(NAME)
 test3: $(NAME)
 	./$(NAME) 42.0f
 
-.PHONY:	all clean fclean re run
+.PHONY:	all clean fclean re run test1 test2 test3
