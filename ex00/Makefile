@@ -6,7 +6,7 @@
 #    By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 14:06:19 by ysoroko           #+#    #+#              #
-#    Updated: 2021/11/28 18:07:42 by ysoroko          ###   ########.fr        #
+#    Updated: 2021/11/28 18:36:13 by ysoroko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,6 @@ clean:
 
 fclean: clean
 	rm -rf $(EXEC)
-	rm -rf $(FILES)
 	
 re:	fclean all
 

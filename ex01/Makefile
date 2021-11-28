@@ -6,7 +6,7 @@
 #    By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 14:06:19 by ysoroko           #+#    #+#              #
-#    Updated: 2021/10/14 11:09:56 by ysoroko          ###   ########.fr        #
+#    Updated: 2021/11/28 18:36:42 by ysoroko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,8 +28,6 @@ EXE_NAME	=	-o $(NAME)
 
 EXEC		=	$(NAME)
 
-FILES		=	shrub \
-
 # ------------------------------------- RULES ---------------------------------
 all: $(NAME)
 
@@ -44,7 +42,6 @@ clean:
 
 fclean: clean
 	rm -rf $(EXEC)
-	rm -rf $(FILES)
 	
 re:	fclean all
 
