@@ -6,13 +6,13 @@
 #    By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 14:06:19 by ysoroko           #+#    #+#              #
-#    Updated: 2021/10/14 11:09:48 by ysoroko          ###   ########.fr        #
+#    Updated: 2021/11/28 18:07:42 by ysoroko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # ------------------------------------- VARS ----------------------------------
 
-NAME		=	ex00
+NAME		=	converter
 
 SRC			=	main.cpp \
 				Converter.cpp
@@ -27,8 +27,6 @@ FLAGS		=	-Wall -Wextra -Werror -std=c++98 -Wshadow -Wno-shadow -Wno-conversion
 EXE_NAME	=	-o $(NAME)
 
 EXEC		=	$(NAME)
-
-FILES		=	shrub \
 
 # ------------------------------------- RULES ---------------------------------
 all: $(NAME)
