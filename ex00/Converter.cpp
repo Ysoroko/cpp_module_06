@@ -6,7 +6,7 @@
 /*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 16:44:54 by ysoroko           #+#    #+#             */
-/*   Updated: 2021/11/28 18:26:47 by ysoroko          ###   ########.fr       */
+/*   Updated: 2021/11/28 18:28:54 by ysoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -181,5 +181,5 @@ Converter::operator double()
 		ft_msg("Impossible: out of double range");
 		return (d);
 	}
-	return (d); //to test
+	return (d);
 }
