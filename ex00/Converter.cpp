@@ -6,7 +6,7 @@
 /*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 16:44:54 by ysoroko           #+#    #+#             */
-/*   Updated: 2021/10/14 10:30:54 by ysoroko          ###   ########.fr       */
+/*   Updated: 2021/11/28 18:26:47 by ysoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,15 @@ Converter::operator char()
 	char c = 0;
 	if (_str.length() == 1)
 	{
-		c = _str[0];
+		int d = 0;
+		try
+		{
+			d = stoi(_str);
+			c = static_cast<char>(d);
+		}
+		catch (const std::invalid_argument& ia){
+			c = _str[0];
+		}
 		if (ft_is_printable_char(c))
 			std::cout << "[" << _str << "]" << " as a char: " << c << std::endl;
 		else
